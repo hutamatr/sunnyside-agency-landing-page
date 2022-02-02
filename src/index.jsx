@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/tailwind.css';
-import '@themesberg/flowbite';
 import App from './App';
 
 ReactDOM.render(
