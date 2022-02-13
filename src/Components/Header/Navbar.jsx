@@ -27,7 +27,7 @@ const Navbar = () => {
   );
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full">
+    <header className="absolute top-0 left-0 z-50 w-full">
       <nav className="ml-6 mr-6 flex h-14 max-w-4xl items-center justify-between pt-4">
         <img src={Logo} alt="Sunnyside" />
         {menuShow}
@@ -53,7 +53,7 @@ const Navbar = () => {
         </section>
       </nav>
 
-      <div className="mt-8 flex flex-col items-center justify-center gap-y-6">
+      <div className="mt-8 flex flex-col items-center justify-center gap-y-6 overflow-hidden">
         <h1 className="font-fraunces mb-10 mt-4 text-center text-4xl tracking-widest text-white">
           WE ARE <br /> CREATIVES
         </h1>
