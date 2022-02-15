@@ -1,7 +1,7 @@
 import GraphicDesign from '../../assets/mobile/image-graphic-design.jpg';
 import Photography from '../../assets/mobile/image-photography.jpg';
 
-const ServicesContent = [
+const ServicesData = [
   {
     image: GraphicDesign,
     title: 'Graphic design',
@@ -15,4 +15,4 @@ const ServicesContent = [
       'Increase your credibility by getting the most stunning, high-quality photos that improve your business image.',
   },
 ];
-export default ServicesContent;
+export default ServicesData;

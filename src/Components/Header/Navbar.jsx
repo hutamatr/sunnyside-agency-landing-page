@@ -9,7 +9,11 @@ const Navbar = () => {
   const menus = ['About', 'Service', 'Project', 'Contact'];
 
   const showMenuHandler = () => {
-    return !showMenu ? setShowMenu(true) : setShowMenu(false);
+    !showMenu ? setShowMenu(true) : setShowMenu(false);
+  };
+
+  const clickMenuHandler = () => {
+    setShowMenu(false);
   };
 
   const menuShow = !showMenu ? (
@@ -32,7 +36,7 @@ const Navbar = () => {
         <img src={Logo} alt="Sunnyside" />
         {menuShow}
         <section
-          className={`fixed top-0 z-50 h-full w-3/4 rounded-tl-md bg-white pt-16 pl-20 shadow-md duration-500 ${
+          className={`fixed top-0 z-50 h-full w-2/3 rounded-tl-md rounded-bl-md bg-white pt-16 pl-20 shadow-md duration-500 ${
             showMenu ? 'right-0' : '-right-full'
           }`}
         >
@@ -41,8 +45,9 @@ const Navbar = () => {
               return (
                 <li key={i}>
                   <a
-                    href="##"
+                    href={`#${menu}`}
                     className="font-semibold text-slate-500 hover:text-slate-600"
+                    onClick={clickMenuHandler}
                   >
                     {menu}
                   </a>
@@ -57,7 +62,7 @@ const Navbar = () => {
         <h1 className="font-fraunces mb-10 mt-4 text-center text-4xl tracking-widest text-white">
           WE ARE <br /> CREATIVES
         </h1>
-        <img src={arrow} alt="arrow" className="w-9" />
+        <img src={arrow} alt="arrow" className="w-9 overflow-hidden" />
       </div>
     </header>
   );

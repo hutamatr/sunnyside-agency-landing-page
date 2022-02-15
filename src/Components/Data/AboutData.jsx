@@ -1,7 +1,7 @@
 import Transform from '../../assets/mobile/image-transform.jpg';
 import StandOut from '../../assets/mobile/image-stand-out.jpg';
 
-const AboutContents = [
+const AboutData = [
   {
     image: Transform,
     title: 'Transform your brand',
@@ -16,4 +16,4 @@ const AboutContents = [
   },
 ];
 
-export default AboutContents;
+export default AboutData;

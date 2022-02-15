@@ -2,7 +2,7 @@ import Emily from '../../assets/image-emily.jpg';
 import Jennie from '../../assets/image-jennie.jpg';
 import Thomas from '../../assets/image-thomas.jpg';
 
-const ClientContent = [
+const ClientsData = [
   {
     desc: 'We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.',
     name: 'Emily R.',
@@ -23,4 +23,4 @@ const ClientContent = [
   },
 ];
 
-export default ClientContent;
+export default ClientsData;
