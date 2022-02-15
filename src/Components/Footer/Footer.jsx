@@ -6,17 +6,20 @@ import Twitter from '../../assets/icon-twitter.svg';
 import Pinterest from '../../assets/icon-pinterest.svg';
 
 const Footer = () => {
-  const menus = ['About', 'Services', 'Project'];
+  const menus = ['About', 'Service', 'Project'];
   const socialMedia = [Facebook, Instagram, Twitter, Pinterest];
   return (
     <footer id="Contact">
       <section className="flex flex-col justify-center gap-y-8 bg-[#90D4C5] py-12">
-        <img src={Sunnyside} alt="" className="mx-auto w-32" />
-        <ul className="flex flex-row justify-around">
+        <a href="#Home">
+          <img src={Sunnyside} alt="" className="mx-auto w-32" />
+        </a>
+
+        <ul className="flex flex-row justify-around md:justify-evenly">
           {menus.map((menu, i) => {
             return (
               <li key={i}>
-                <a href="##" className="text-sm text-darkModerateCyan">
+                <a href={`#${menu}`} className="text-sm text-darkModerateCyan">
                   {menu}
                 </a>
               </li>
@@ -24,7 +27,7 @@ const Footer = () => {
           })}
         </ul>
 
-        <ul className="flex flex-row justify-center items-start gap-x-6 py-6">
+        <ul className="flex flex-row justify-center gap-x-6 py-6">
           {socialMedia.map((social, i) => {
             return (
               <li key={i}>

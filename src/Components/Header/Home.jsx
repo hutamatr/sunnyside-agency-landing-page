@@ -1,10 +1,16 @@
 import React from 'react';
-import HomeImg from '../../assets/mobile/image-header.jpg';
+import HomeImgMobile from '../../assets/mobile/image-header.jpg';
+import HomeImageDekstop from '../../assets/desktop/image-header.jpg';
 
 const Home = () => {
   return (
-    <section>
-      <img src={HomeImg} alt="HomeImg" className="max-h-full" />
+    <section id="Home">
+      <img src={HomeImgMobile} alt="HomeImgMobile" className="md:hidden" />
+      <img
+        src={HomeImageDekstop}
+        alt="HomeImageDekstop"
+        className="hidden md:block"
+      />
     </section>
   );
 };

@@ -8,7 +8,7 @@ const Clients = () => {
       <h2 className="font-fraunces my-16 text-center text-base tracking-[.25rem] text-grayish">
         CLIENT TESTIMONIALS
       </h2>
-      <ul className="mb-16 flex flex-col gap-y-16">
+      <ul className="mb-16 flex flex-col gap-y-16 md:flex-row">
         {ClientsData.map((client, i) => {
           return (
             <li

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -51,4 +51,15 @@ body {
       calc(var(--underline-width) * 1px),
     auto calc(var(--underline-width) * 1px),
     auto calc(var(--underline-width) * 1px);
+}
+
+.triangle:after {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  top: -10%;
+  border-top: 0 solid transparent;
+  border-right: none;
+  border-left: 2rem solid transparent;
+  border-bottom: 2rem solid white;
 }

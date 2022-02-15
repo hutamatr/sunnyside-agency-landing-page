@@ -1,21 +1,27 @@
 import React from 'react';
-import MilkBottles from '../../assets/mobile/image-gallery-milkbottles.jpg';
-import Orange from '../../assets/mobile/image-gallery-orange.jpg';
-import Cone from '../../assets/mobile/image-gallery-cone.jpg';
-import SugarCube from '../../assets/mobile/image-gallery-sugar-cubes.jpg';
+import PicturesData from '../Data/PicturesData';
 
 const Pictures = () => {
-  const pics = [MilkBottles, Orange, Cone, SugarCube];
-
   return (
-    <section className="grid grid-cols-2">
-      {pics.map((pic, i) => {
-        return (
-          <div key={i}>
-            <img src={pic} alt={`pictures-${i + 1}`} />
-          </div>
-        );
-      })}
+    <section>
+      <ul className="grid grid-cols-2 md:grid-cols-4">
+        {PicturesData.map((picture, i) => {
+          return (
+            <li key={i}>
+              <img
+                src={picture.imageMobile}
+                alt={`picturesMobile-${i + 1}`}
+                className="md:hidden"
+              />
+              <img
+                src={picture.imageDekstop}
+                alt={`picturesDekstop-${i + 1}`}
+                className="hidden md:block"
+              />
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 };
