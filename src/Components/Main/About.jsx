@@ -17,7 +17,7 @@ const About = () => {
               className="hidden md:block"
             />
             <article
-              className={`flex flex-col items-center justify-center gap-y-6 px-6 py-6 md:pl-10 md:pr-12 md:items-start lg:pr-28 lg:pl-32 lg:gap-y-8  ${
+              className={`flex flex-col items-center justify-center gap-y-6 px-8 py-16 md:py-6 md:pl-10 md:pr-12 md:items-start lg:pr-28 lg:pl-32 lg:gap-y-8  ${
                 i === 0 ? 'md:order-first' : ''
               }`}
             >

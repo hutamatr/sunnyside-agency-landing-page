@@ -4,6 +4,7 @@ import Facebook from '../../assets/icon-facebook.svg';
 import Instagram from '../../assets/icon-instagram.svg';
 import Twitter from '../../assets/icon-twitter.svg';
 import Pinterest from '../../assets/icon-pinterest.svg';
+import Love from '../../assets/love.svg';
 
 const Footer = () => {
   const menus = ['About', 'Service', 'Project'];
@@ -45,6 +46,27 @@ const Footer = () => {
             );
           })}
         </ul>
+        <div class="flex flex-row text-xs justify-center items-center gap-x-1 text-darkModerateCyan md:text-sm">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noreferrer"
+            className="text-darkDesaturatedCyan"
+          >
+            Frontend Mentor
+          </a>
+          . Made with <img src={Love} class="w-4" alt="" /> by
+          <a
+            href="https://twitter.com/huutamatr"
+            target="_blank"
+            rel="noreferrer"
+            className="text-darkDesaturatedCyan"
+          >
+            hutamatr
+          </a>
+          .
+        </div>
       </section>
     </footer>
   );

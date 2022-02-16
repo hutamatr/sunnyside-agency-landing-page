@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {menuShow}
         <section
-          className={`fixed top-[13%] z-[999] w-[85%] rounded-sm rounded-tr-none bg-white shadow-md duration-500 py-8 md:absolute md:left-[30%] md:-top-[5%] md:bg-opacity-0 md:shadow-none lg:left-[40%] lg:-top-[3%] ${
+          className={`fixed top-[13%] z-[999] w-[85%] rounded-sm rounded-tr-none bg-white shadow-md duration-500 py-8 md:absolute md:left-[60%] md:-top-[5%] md:bg-opacity-0 md:shadow-none lg:left-[70%] lg:-top-[3%] md:w-[30%] ${
             showMenu ? 'right-[8%]' : '-right-full'
           }`}
         >
