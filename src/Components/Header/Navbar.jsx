@@ -38,12 +38,12 @@ const Navbar = () => {
     <header className="absolute top-0 left-0 z-50 w-full">
       <nav className="ml-6 mr-6 flex h-14 max-w-4xl items-center justify-between pt-4">
         <a href="#Home">
-          <img src={Logo} alt="Sunnyside" />
+          <img src={Logo} alt="Sunnyside" className="md:w-44" />
         </a>
 
         {menuShow}
         <section
-          className={`fixed top-[13%] z-[999] w-[85%] rounded-sm rounded-tr-none bg-white shadow-md duration-500 py-8 md:absolute md:left-[30%] md:-top-[5%] md:bg-opacity-0 md:shadow-none lg:left-[40%] ${
+          className={`fixed top-[13%] z-[999] w-[85%] rounded-sm rounded-tr-none bg-white shadow-md duration-500 py-8 md:absolute md:left-[30%] md:-top-[5%] md:bg-opacity-0 md:shadow-none lg:left-[40%] lg:-top-[3%] ${
             showMenu ? 'right-[8%]' : '-right-full'
           }`}
         >
@@ -61,7 +61,11 @@ const Navbar = () => {
                 >
                   <a
                     href={`#${menu}`}
-                    className={`font-normal hover:text-veryDarkGrayish ${i === 3 ? 'text-veryDarkDesaturated' : 'text-darkGrayish md:text-white'}`}
+                    className={`font-normal hover:text-veryDarkGrayish ${
+                      i === 3
+                        ? 'text-veryDarkDesaturated'
+                        : 'text-darkGrayish md:text-white'
+                    }`}
                     onClick={clickMenuHandler}
                   >
                     {menu}
@@ -74,10 +78,10 @@ const Navbar = () => {
       </nav>
 
       <div className="mt-8 flex flex-col items-center justify-center gap-y-6 overflow-hidden">
-        <h1 className="font-fraunces mb-10 mt-4 text-center text-4xl tracking-widest text-white">
-          WE ARE <br /> CREATIVES
+        <h1 className="font-fraunces mb-10 mt-4 text-center text-4xl tracking-widest text-white lg:text-6xl lg:mt-20 lg:mb-16">
+          WE ARE CREATIVES
         </h1>
-        <img src={arrow} alt="arrow" className="w-9 overflow-hidden" />
+        <img src={arrow} alt="arrow" className="w-9" />
       </div>
     </header>
   );

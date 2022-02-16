@@ -12,14 +12,17 @@ const Footer = () => {
     <footer id="Contact">
       <section className="flex flex-col justify-center gap-y-8 bg-[#90D4C5] py-12">
         <a href="#Home">
-          <img src={Sunnyside} alt="" className="mx-auto w-32" />
+          <img src={Sunnyside} alt="" className="mx-auto w-32 lg:w-44" />
         </a>
 
-        <ul className="flex flex-row justify-around md:justify-evenly">
+        <ul className="flex flex-row justify-around md:justify-center md:gap-x-12">
           {menus.map((menu, i) => {
             return (
               <li key={i}>
-                <a href={`#${menu}`} className="text-sm text-darkModerateCyan">
+                <a
+                  href={`#${menu}`}
+                  className="text-base text-darkModerateCyan lg:text-lg"
+                >
                   {menu}
                 </a>
               </li>
@@ -32,7 +35,11 @@ const Footer = () => {
             return (
               <li key={i}>
                 <a href="##">
-                  <img src={social} alt={`social-${i + 1}`} className="w-4" />
+                  <img
+                    src={social}
+                    alt={`social-${i + 1}`}
+                    className="w-4 lg:w-5"
+                  />
                 </a>
               </li>
             );

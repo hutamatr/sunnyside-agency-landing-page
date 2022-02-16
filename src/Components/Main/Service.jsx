@@ -1,7 +1,5 @@
 import React from 'react';
 import ServicesData from '../Data/ServicesData';
-// import GraphicDesignDekstop from '../../assets/desktop/image-graphic-design.jpg';
-// import PhotographyDekstop from '../../assets/desktop/image-photography.jpg';
 
 const Service = () => {
   return (
@@ -22,7 +20,7 @@ const Service = () => {
                 className={`hidden md:block`}
               />
 
-              <article className="absolute top-[60%]  mb-6 flex flex-col items-center justify-center gap-y-4 p-4">
+              <article className="absolute top-[65%] flex flex-col items-center justify-center gap-y-4 px-4 mb-10 md:-bottom-[1%] md:px-10 lg:px-40 lg:gap-y-6">
                 <h1
                   className={`font-fraunces text-2xl  ${
                     i === 0 ? 'text-darkDesaturatedCyan' : 'text-darkBlue'
@@ -31,7 +29,7 @@ const Service = () => {
                   {service.title}
                 </h1>
                 <p
-                  className={`text-center text-sm leading-relaxed  ${
+                  className={`text-center text-sm leading-relaxed lg:text-base  ${
                     i === 0 ? 'text-darkModerateCyan' : 'text-darkBlue'
                   }`}
                 >
