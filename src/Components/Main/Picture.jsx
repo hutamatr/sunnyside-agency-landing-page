@@ -1,5 +1,5 @@
-import React from 'react';
-import PicturesData from '../Data/PicturesData';
+import React from "react";
+import PicturesData from "../Data/PicturesData";
 
 const Pictures = () => {
   return (
@@ -14,8 +14,8 @@ const Pictures = () => {
                 className="md:hidden"
               />
               <img
-                src={picture.imageDekstop}
-                alt={`picturesDekstop-${i + 1}`}
+                src={picture.imageDesktop}
+                alt={`picturesDesktop-${i + 1}`}
                 className="hidden md:block"
               />
             </li>

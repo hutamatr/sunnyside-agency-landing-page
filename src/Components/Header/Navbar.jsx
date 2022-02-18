@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import Logo from '../../assets/logo.svg';
-import hamburger from '../../assets/icon-hamburger.svg';
-import arrow from '../../assets/icon-arrow-down.svg';
-import { MdClose } from 'react-icons/md';
+import React, { useState } from "react";
+import Logo from "../../assets/logo.svg";
+import hamburger from "../../assets/icon-hamburger.svg";
+import arrow from "../../assets/icon-arrow-down.svg";
+import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const menus = ['About', 'Service', 'Project', 'Contact'];
+  const menus = ["About", "Service", "Project", "Contact"];
 
   const showMenuHandler = () => {
     !showMenu ? setShowMenu(true) : setShowMenu(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
       className="z-[999] inline-flex md:hidden"
       onClick={showMenuHandler}
     >
-      <img src={hamburger} alt="hamburger-manu" />
+      <img src={hamburger} alt="hamburger-menu" />
     </a>
   ) : (
     <a
@@ -43,28 +43,28 @@ const Navbar = () => {
 
         {menuShow}
         <section
-          className={`fixed top-[13%] z-[999] w-[85%] rounded-sm rounded-tr-none bg-white shadow-md duration-500 py-8 md:absolute md:left-[60%] md:-top-[5%] md:bg-opacity-0 md:shadow-none lg:left-[70%] lg:-top-[3%] md:w-[30%] ${
-            showMenu ? 'right-[8%]' : '-right-full'
+          className={`fixed top-[13%] z-[999] w-[85%] rounded-sm rounded-tr-none bg-white py-8 shadow-md duration-500 md:absolute md:left-[60%] md:-top-[5%] md:w-[30%] md:bg-opacity-0 md:shadow-none lg:left-[70%] lg:-top-[3%] ${
+            showMenu ? "right-[8%]" : "-right-full"
           }`}
         >
           <div className="triangle md:hidden"></div>
-          <ul className="flex flex-col gap-y-6 justify-center items-center md:flex-row md:gap-x-8">
+          <ul className="flex flex-col items-center justify-center gap-y-6 md:flex-row md:gap-x-8">
             {menus.map((menu, i) => {
               return (
                 <li
                   key={i}
                   className={`${
                     i === 3
-                      ? 'bg-yellowSun uppercase py-3 px-7 rounded-full font-fraunces text-sm md:bg-white'
-                      : ''
+                      ? "bg-yellowSun font-fraunces rounded-full py-3 px-7 text-sm uppercase md:bg-white"
+                      : ""
                   }`}
                 >
                   <a
                     href={`#${menu}`}
-                    className={`font-normal hover:text-veryDarkGrayish ${
+                    className={`hover:text-veryDarkGrayish font-normal ${
                       i === 3
-                        ? 'text-veryDarkDesaturated'
-                        : 'text-darkGrayish md:text-white'
+                        ? "text-veryDarkDesaturated"
+                        : "text-darkGrayish md:text-white"
                     }`}
                     onClick={clickMenuHandler}
                   >
@@ -78,7 +78,7 @@ const Navbar = () => {
       </nav>
 
       <div className="mt-8 flex flex-col items-center justify-center gap-y-6 overflow-hidden">
-        <h1 className="font-fraunces mb-10 mt-4 text-center text-4xl tracking-widest text-white lg:text-6xl lg:mt-20 lg:mb-16">
+        <h1 className="font-fraunces mb-10 mt-4 text-center text-4xl tracking-widest text-white lg:mt-20 lg:mb-16 lg:text-6xl">
           WE ARE CREATIVES
         </h1>
         <img src={arrow} alt="arrow" className="w-9" />
