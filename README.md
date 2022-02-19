@@ -1,4 +1,4 @@
-# Frontend Mentor - Order summary card solution
+# Frontend Mentor - Sunnyside agency landing page solution
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
 
@@ -24,14 +24,20 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 1](https://github.com/hutamatr/sunnyside-agency-landing-page/blob/master/src/Images/mobile.png)
+- Mobile View
 
-![Screenshot 2](https://github.com/hutamatr/sunnyside-agency-landing-page/blob/master/src/Images/dekstop.png)
+![Screenshot 1](https://github.com/hutamatr/sunnyside-agency-landing-page/blob/master/src/assets/Mobile.png)
+
+![Screenshot 2](https://github.com/hutamatr/sunnyside-agency-landing-page/blob/master/src/assets/Mobile-2.png)
+
+- Dekstop View
+
+![Screenshot 3](https://github.com/hutamatr/sunnyside-agency-landing-page/blob/master/src/assets/Dekstop.png)
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Demo]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-sunnyside-agency-landing-page-with-reactjs-and-tailwindcss-ev8yeuNkK)
+- Live Site URL: [Demo](https://sunnyside-agency-htma.netlify.app)
 
 ## My process
 

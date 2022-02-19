@@ -1,7 +1,5 @@
 import React from "react";
 import AboutData from "../Data/AboutData";
-// import TransformDesktop from '../../assets/desktop/image-transform.jpg';
-// import StandOutDesktop from '../../assets/desktop/image-stand-out.jpg';
 
 const About = () => {
   // const [imageAbout, setImageAbout] = useState(false);
@@ -21,21 +19,22 @@ const About = () => {
                 i === 0 ? "md:order-first" : ""
               }`}
             >
-              <h1 className="font-fraunces text-veryDarkDesaturated text-center text-3xl md:text-left lg:text-[2.5rem] lg:leading-tight">
+              <h1 className="text-center font-fraunces text-3xl text-veryDarkDesaturated md:text-left lg:text-[2.5rem] lg:leading-tight">
                 {content.title}
               </h1>
-              <p className="text-darkGrayish text-center text-sm font-extralight leading-relaxed md:text-left lg:text-base">
+              <p className="text-center text-sm font-extralight leading-relaxed text-darkGrayish md:text-left lg:text-base">
                 {content.paragraph}
               </p>
               <a href="##" className="box">
                 <h1
-                  className="heading font-fraunces text-base text-slate-800 md:text-sm
+                  className="heading text-slate-800 font-fraunces text-base md:text-sm
                 "
                 >
                   LEARN MORE
                 </h1>
               </a>
             </article>
+            <div className=""></div>
           </div>
         );
       })}

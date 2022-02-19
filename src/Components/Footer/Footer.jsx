@@ -1,13 +1,13 @@
-import React from 'react';
-import Sunnyside from '../../assets/logo-2.svg';
-import Facebook from '../../assets/icon-facebook.svg';
-import Instagram from '../../assets/icon-instagram.svg';
-import Twitter from '../../assets/icon-twitter.svg';
-import Pinterest from '../../assets/icon-pinterest.svg';
-import Love from '../../assets/love.svg';
+import React from "react";
+import Sunnyside from "../../assets/logo-2.svg";
+import Facebook from "../../assets/icon-facebook.svg";
+import Instagram from "../../assets/icon-instagram.svg";
+import Twitter from "../../assets/icon-twitter.svg";
+import Pinterest from "../../assets/icon-pinterest.svg";
+import Love from "../../assets/love.svg";
 
 const Footer = () => {
-  const menus = ['About', 'Service', 'Project'];
+  const menus = ["About", "Service", "Project"];
   const socialMedia = [Facebook, Instagram, Twitter, Pinterest];
   return (
     <footer id="Contact">
@@ -22,7 +22,7 @@ const Footer = () => {
               <li key={i}>
                 <a
                   href={`#${menu}`}
-                  className="text-base text-darkModerateCyan lg:text-lg"
+                  className="text-darkModerateCyan text-base lg:text-lg"
                 >
                   {menu}
                 </a>
@@ -46,7 +46,7 @@ const Footer = () => {
             );
           })}
         </ul>
-        <div class="flex flex-row text-xs justify-center items-center gap-x-1 text-darkModerateCyan md:text-sm">
+        <div class="text-darkModerateCyan flex flex-row items-center justify-center gap-x-1 text-xs md:text-sm">
           Challenge by
           <a
             href="https://www.frontendmentor.io?ref=challenge"
