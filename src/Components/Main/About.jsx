@@ -2,7 +2,6 @@ import React from "react";
 import AboutData from "../Data/AboutData";
 
 const About = () => {
-  // const [imageAbout, setImageAbout] = useState(false);
   return (
     <section id="About">
       {AboutData.map((content, i) => {
@@ -15,7 +14,7 @@ const About = () => {
               className="hidden md:block"
             />
             <article
-              className={`flex flex-col items-center justify-center gap-y-6 px-8 py-16 md:items-start md:py-6 md:pl-10 md:pr-12 lg:gap-y-8 lg:pr-28 lg:pl-32  ${
+              className={`flex flex-col items-center justify-center gap-y-6 px-8 py-16 md:items-start md:py-6 md:pl-10 md:pr-12 lg:gap-y-8 lg:pr-28 lg:pl-32 ${
                 i === 0 ? "md:order-first" : ""
               }`}
             >
